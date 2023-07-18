@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 
 project(
-    "cpp"
+    "mastering-cpp"
     VERSION 0.1.0
     LANGUAGES C CXX)
 
