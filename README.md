@@ -6,84 +6,80 @@
 [![Windows CI Test](https://github.com/kybuivan/cpp/actions/workflows/windows.yml/badge.svg)](https://github.com/kybuivan/cpp/actions/workflows/windows.yml)
 [![MacOS CI Test](https://github.com/kybuivan/cpp/actions/workflows/macos.yml/badge.svg)](https://github.com/kybuivan/cpp/actions/workflows/macos.yml)
 
-This is a sdl tutorials. What you get:
+Welcome to "Mastering C++: Level Up Your Programming Skills" – a comprehensive and immersive journey through the world of C++ programming. This book is designed to be your ultimate guide, taking you from a complete beginner with no prior coding experience to a proficient C++ developer capable of tackling complex projects with confidence.
 
--   Library, executable and test code separated in distinct folders
--   Use of modern CMake for building and compiling
--   External libraries installed and managed by [CPM](https://github.com/cpm-cmake/CPM.cmake) Package Manager
--   Unit testing using [Catch2](https://github.com/catchorg/Catch2) v2
--   General purpose libraries: [JSON](https://github.com/nlohmann/json), [spdlog](https://github.com/gabime/spdlog), [cxxopts](https://github.com/jarro2783/cxxopts) and [fmt](https://github.com/fmtlib/fmt)
--   Continuous integration testing with Github Actions and [pre-commit](https://pre-commit.com/)
--   Code documentation with [Doxygen](https://doxygen.nl/) and [Github Pages](https://franneck94.github.io/CppProjectTemplate/)
--   Tooling: Clang-Format, Cmake-Format, Clang-tidy, Sanitizers
+C++ is a powerful and versatile programming language widely used in a multitude of applications, including systems programming, game development, and high-performance computing. It is known for its efficiency, flexibility, and ability to work closely with hardware, making it a preferred choice for developers seeking high-performance solutions.
 
-## Structure
+We'll start from the very basics, introducing you to fundamental programming concepts and gradually building up to more advanced topics. Each level represents a carefully crafted module, focusing on specific aspects of C++ programming, accompanied by hands-on exercises and coding examples.
 
-```text
-├── CMakeLists.txt
-├── cmake
-│   └── cmake modules
-├── docs
-│   ├── Doxyfile
-│   └── html/
-└── tests
-    ├── CMakeLists.txt
-    └── main.cc
-```
+## What You'll Learn:
 
-Library code goes into [src/](src/), main program code in [app/](app) and tests go in [tests/](tests/).
+### Level 0 - Introduction to C++:
+- Basics of programming and C++ language.
+- Setting up the development environment.
+- Writing and executing the first "Hello, World!" program.
+- Introduction to variables and data types.
 
-## Software Requirements
+### Level 1 - Core Concepts and Modern C++:
+- Control structures: if-else, switch, and loops (while, for).
+- Functions and their importance in C++.
+- Basic error handling with try-catch blocks.
+- C++11: Introduction to auto, range-based for loop, and nullptr.
+- C++14: Generic lambdas and variable templates.
 
--   CMake 3.21+
--   GNU Makefile
--   Doxygen
--   CPM
--   MSVC 2017 (or higher), G++9 (or higher), Clang++9 (or higher)
--   Optional: Code Coverage (only on GNU|Clang): lcov, gcovr
--   Optional: Makefile, Doxygen
+### Level 2 - Object-Oriented Programming and C++11 Features:
+- Introduction to Object-Oriented Programming (OOP) principles.
+- Classes and objects: creating and using them.
+- Constructors and destructors.
+- Member functions and data members.
+- C++11: Move semantics and rvalue references.
 
-## Building
+### Level 3 - Modern C++ Memory Management:
+- Pointers and their significance in C++.
+- Dynamic memory allocation (new and delete).
+- References and their differences from pointers.
+- C++11: Smart pointers (unique_ptr, shared_ptr, weak_ptr).
+- C++14: Make_shared and Make_unique.
 
-First, clone this repo and do the preliminary work:
+### Level 4 - Standard Template Library (STL) and C++11 Improvements:
+- An overview of the Standard Template Library (STL).
+- Working with vectors, lists, and queues.
+- Utilizing stack and deque containers.
+- Understanding algorithms like sorting and searching.
+- C++11: Improvements in the STL and lambda functions in algorithms.
 
-```shell
-git clone https://github.com/kybuivan/cpp.git
-make prepare
-```
+### Level 5 - File Handling and Input/Output Streams:
+- Working with file streams: reading from and writing to files.
+- Understanding file modes and handling errors.
+- Parsing data from files and processing it.
+- Manipulating text files and binary files.
 
--   App Executable
+### Level 6 - Modern C++ Concurrency:
+- Understanding multithreading and its challenges.
+- Creating and managing threads in C++.
+- C++11: Introducing std::thread and thread synchronization.
+- C++14: Shared locks and C++17: std::shared_mutex.
+- C++20: Concepts and std::jthread.
 
-```shell
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-cmake --build . --config Release --target main
-cd app
-./main
-```
+### Level 7 - Exception Handling and Error Management:
+- In-depth exception handling strategies.
+- Creating custom exceptions and exception hierarchies.
+- RAII (Resource Acquisition Is Initialization) principles.
+- Managing errors and debugging techniques.
 
--   Unit testing
+### Level 8 - Modern C++ Generic Programming:
+- Introduction to templates and generic programming.
+- Function templates and class templates.
+- C++11: Variadic templates and type traits.
+- C++14: Return type deduction for functions.
 
-```shell
-cd build
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-cmake --build . --config Debug --target unit_tests
-cd tests
-./unit_tests
-```
+### Level 9 - C++ Design Patterns:
+- Writing efficient and performant C++ code.
+- Best practices for coding style and readability.
+- Profiling and benchmarking your C++ applications.
+- Design patterns: Factory, Singleton, Builder, Prototype, Adapter, Decorator, etc.
 
--   Documentation
 
-```shell
-cd build
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-cmake --build . --config Debug --target docs
-```
+## Conclusion:
 
--   Output
-
-```shell
-JSON: 3.11.2
-FMT: 90100
-CXXOPTS: 3.1.1
-```
+"Mastering C++: Level Up Your Programming Skills" is your key to unlock the full potential of C++ and become a proficient and confident C++ developer. As you embark on this journey, embrace curiosity, seek challenges, and don't hesitate to experiment. Remember, coding is both an art and a science, and with dedication and practice, you'll master the craft of C++ programming. Let's begin this exciting adventure together!

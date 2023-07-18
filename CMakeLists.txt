@@ -63,6 +63,3 @@ CPMAddPackage("gh:nlohmann/json@3.11.2")
 CPMAddPackage("gh:catchorg/Catch2@2.13.9")
 CPMAddPackage("gh:jarro2783/cxxopts@3.1.1")
 CPMAddPackage("gh:gabime/spdlog@1.11.0")
-
-# SUB DIRECTORIES
-add_subdirectory(tests)
