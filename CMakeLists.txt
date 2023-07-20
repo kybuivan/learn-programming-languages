@@ -83,6 +83,7 @@ endif()
 #CPMAddPackage("gh:gabime/spdlog@1.11.0")
 
 set( levels
+  "level_00_basic"
   "level_05_cpp11_and_beyond"
   "level_09_design_patterns"
   "level_10_projects"
