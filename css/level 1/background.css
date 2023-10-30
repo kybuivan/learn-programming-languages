@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(187, 229, 243);
+    background-image: url("https://www.w3schools.com/css/img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* margin-right: 200px;
+    background-attachment: fixed; */
+}
+
+
+div {
+    background-color: green;
+}
+
+div.first {
+    background: rgba(0, 128, 0, 0.1);
+}
+
+div.second {
+    background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+    background: rgba(0, 128, 0, 0.6);
+}
+
+p.center {
+    background-color: rgb(255, 255, 123);
+    background-image: url("https://www.w3schools.com/css/paper.gif");
+}

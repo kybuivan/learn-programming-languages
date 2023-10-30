@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First JavaScript</h1>
+
+    <button type="button" onclick="document.getElementById('time').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="time"></p>
+
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <h1>My First JavaScript</h1>
+
+    <p>JavaScript can change the content of an HTML element:</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="change">This is a demonstration.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("change").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+
+
+    <h1>My First JavaScript</h1>
+
+    <p id="color">JavaScript can change the style of an HTML element.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("color").style.fontSize = "25px";
+            document.getElementById("color").style.color = "red";
+            document.getElementById("color").style.backgroundColor = "yellow";
+        }
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+            } else {
+                pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</body>
+
+</html>

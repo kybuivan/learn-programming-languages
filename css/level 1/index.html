@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="selector.css" />
+    <link rel="stylesheet" type="text/css" href="background.css" />
+    <link rel="stylesheet" type="text/css" href="border.css" />
+    <link rel="stylesheet" type="text/css" href="text.css" />
+    <link rel="stylesheet" type="text/css" href="font.css" />
+    <link rel="stylesheet" type="text/css" href="list.css" />
+    <link rel="stylesheet" type="text/css" href="table.css" />
+    <link rel="stylesheet" type="text/css" href="position.css" />
+    <link rel="stylesheet" type="text/css" href="float.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        h1 {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
+                the old town and the modern city.</p>
+            <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+        </div>
+    </div>
+
+
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h1>This is a heading</h1>
+
+    <h1 style="color:blue;text-align:center;">This is a heading</h1>
+    <p style="color:red;">This is a paragraph.</p>
+
+    <p>Hello World!</p>
+    <p id="para1">These paragraphs are styled with CSS.</p>
+
+    <p class="center">This paragraph will be red and center-aligned.</p>
+
+    <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+
+    <p>Every element on the page will be affected by the style.</p>
+    <p id="para1">Me too!</p>
+    <p>And me!</p>
+
+
+    <h1>Transparent Boxes</h1>
+
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements
+        become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+    <div class="first">
+        <h1>opacity 0.1</h1>
+    </div>
+
+    <div class="second">
+        <h1>opacity 0.3</h1>
+    </div>
+
+    <div class="third">
+        <h1>opacity 0.6</h1>
+    </div>
+
+    <div>
+        <h1>opacity 1 (default)</h1>
+    </div>
+
+    <h1>Transparent Boxes 2</h1>
+
+    <p>Result with opacity:</p>
+
+    <div style="opacity:0.1;">
+        <h1>10% opacity</h1>
+    </div>
+
+    <div style="opacity:0.3;">
+        <h1>30% opacity</h1>
+    </div>
+
+    <div style="opacity:0.6;">
+        <h1>60% opacity</h1>
+    </div>
+
+    <div>
+        <h1>opacity 1</h1>
+    </div>
+
+    <p>Result with rgba():</p>
+
+    <div class="first">
+        <h1>10% opacity</h1>
+    </div>
+
+    <div class="second">
+        <h1>30% opacity</h1>
+    </div>
+
+    <div class="third">
+        <h1>60% opacity</h1>
+    </div>
+
+    <div>
+        <h1>default</h1>
+    </div>
+
+    <p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+    <h2>The border-style Property</h2>
+    <p>This property specifies what kind of border to display:</p>
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders:</p>
+
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone.
+        Always specify the "border-style" property to set the borders first.</p>
+
+    <h2>The border-color Property</h2>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border, and
+        the left border):</p>
+
+    <p class="seven">A solid multicolor border</p>
+
+    <h2>The border-radius Property</h2>
+    <p>This property is used to add rounded borders to an element:</p>
+
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+
+    <h2>Using individual margin properties</h2>
+
+    <div class="round3">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px,
+        and a left
+        margin of 80px.</div>
+
+    <h2>Using individual margin properties</h2>
+
+    <div class="margin">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px,
+        and a left
+        margin of 80px.</div>
+
+    <h2>Using individual padding properties</h2>
+
+    <div class="padding">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px,
+        and a left
+        padding of 80px.</div>
+
+    <h2>Padding and element width</h2>
+
+    <div class="ex1">This div is 300px wide.</div>
+    <br>
+
+    <div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
+    <h2>Demonstrating the Box Model</h2>
+
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding,
+        margins, and the actual content.</p>
+
+    <div class="box1">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green
+        border. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+    <h2>Calculate the total width:</h2>
+
+    <img src="https://www.w3schools.com/css/klematis4_big.jpg" width="350" height="263" alt="Klematis">
+    <div class="box2">The picture above is 350px wide. The total width of this element is also 350px.</div>
+
+    <h1>Heading 1 (center)</h1>
+    <h2>Heading 2 (left)</h2>
+    <h3>Heading 3 (right)</h3>
+
+    <p>The three headings above are aligned center, left and right.</p>
+
+    <h1>The text-align-last Property</h1>
+
+    <h2>text-align-last: right:</h2>
+    <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h2>text-align-last: center:</h2>
+    <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h2>text-align-last: justify:</h2>
+    <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h1>The vertical-align Property</h1>
+
+    <h2>vertical-align: baseline (default):</h2>
+    <p>An <img class="a" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a default
+        alignment.</p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>An <img class="b" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-top
+        alignment.</p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>An <img class="c" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-bottom
+        alignment.</p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>An <img class="d" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a sub
+        alignment.</p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>An <img class="e" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a super
+        alignment.</p>
+
+    <p class="ex1">A paragraph.</p>
+    <p class="ex2">Another paragraph.</p>
+    <p class="ex3">Another paragraph.</p>
+
+    <h1>Using the text-transform property</h1>
+
+    <p class="uppercase">This text is transformed to uppercase.</p>
+    <p class="lowercase">This text is transformed to lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+
+    <h1>Using line-height</h1>
+
+    <p>
+        This is a paragraph with a standard line-height.<br>
+        The default line height in most browsers is about 110% to 120%.<br>
+    </p>
+
+    <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+    </p>
+
+    <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+    </p>
+
+    <h1>Using word-spacing</h1>
+
+    <p>This is a paragraph with normal word spacing.</p>
+
+    <p class="one">This is a paragraph with larger word spacing.</p>
+
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+
+    <h1>Using white-space</h1>
+
+    <p>
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+
+    <p>Try to remove the white-space property to see the difference!</p>
+
+    <h1>CSS font-family</h1>
+    <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+    <p class="p2">This is a paragraph, shown in the Arial font.</p>
+    <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+
+    <h1>The font-style property</h1>
+
+    <p class="normal">This is a paragraph in normal style.</p>
+    <p class="italic">This is a paragraph in italic style.</p>
+    <p class="oblique">This is a paragraph in oblique style.</p>
+
+    <h1>The font-weight property</h1>
+
+    <p class="normal">This is a paragraph.</p>
+    <p class="light">This is a paragraph.</p>
+    <p class="thick">This is a paragraph.</p>
+    <p class="thicker">This is a paragraph.</p>
+
+    <h1>The font-variant property</h1>
+
+    <p class="normal">My name is Hege Refsnes.</p>
+    <p class="small">My name is Hege Refsnes.</p>
+
+    <h1 style="font-size:10vw;">Responsive Text</h1>
+
+    <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport
+        width.</p>
+
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+    <div class="sofia">
+        <h2>Sofia Font</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>123456790</p>
+    </div>
+
+    <h1 class="a">Audiowide Font</h1>
+
+    <h1 class="b">Sofia Font</h1>
+
+    <h1 class="c">Trirong Font</h1>
+
+    <h1>Bootstrap icon library</h1>
+
+    <p>Some Bootstrap icons:</p>
+    <i class="glyphicon glyphicon-cloud"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+    <br><br>
+
+    <p>Styled Bootstrap icons (size and color):</p>
+    <i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:36px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:48px;color:red;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:60px;color:lightblue;"></i>
+
+    <h1>Google icon library</h1>
+
+    <p>Some Google icons:</p>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+    <br><br>
+
+    <p>Styled Google icons (size and color):</p>
+    <i class="material-icons" style="font-size:24px;">cloud</i>
+    <i class="material-icons" style="font-size:36px;">cloud</i>
+    <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+    <i class="material-icons" style="font-size:60px;color:lightblue;">cloud</i>
+
+    <h2>Styling a link with text-decoration property</h2>
+
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <h2>The cursor Property</h2>
+
+    <p>Mouse over the words to change the cursor.</p>
+    <span style="cursor:auto">auto</span><br>
+    <span style="cursor:crosshair">crosshair</span><br>
+    <span style="cursor:default">default</span><br>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor:wait">wait</span><br>
+
+    <h2>The list-style-type Property</h2>
+
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <h2>The list-style-image Property</h2>
+
+    <p>The list-style-image property specifies an image as the list item marker:</p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Default list:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Remove bullets, margin and padding from list:</p>
+    <ul class="demo">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h1>A Fancy Table</h1>
+
+    <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td>North/South</td>
+            <td>Simon Crowther</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+        </tr>
+    </table>
+
+    <h2>Add a border to a table:</h2>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h2>The text-align Property</h2>
+
+    <p>This property sets the horizontal alignment (like left, right, or center) of the content in th or td.</p>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+
+    <h2>Responsive Table</h2>
+    <p>A responsive table will display a horizontal scroll bar if the screen is too
+        small to display the full content. Resize the browser window to see the effect:</p>
+    <p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the
+        table element:</p>
+
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+        </table>
+
+        <h1>Z-index Example</h1>
+
+        <p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+        <div class="container">
+            <div class="black-box">Black box (z-index: 1)</div>
+            <div class="gray-box">Gray box (z-index: 3)</div>
+            <div class="green-box">Green box (z-index: 2)</div>
+        </div>
+    </div>
+
+    <h2>Float Right</h2>
+
+    <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap
+        around the image.</p>
+
+    <p><img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple"
+            style="width:170px;height:170px;margin-left:15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+        eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+        porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+
+    <h2>Float Next To Each Other</h2>
+
+    <p>In this example, the three divs will float next to each other.</p>
+
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+
+    <div class="clearfix">
+        <div class="box" style="background-color:#bbb">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ccc">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ddd">
+            <p>Some text inside the box.</p>
+        </div>
+    </div>
+
+    <p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow.
+        We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove
+        this code to see the effect.</p>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+
+    <p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property
+        to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the
+        effect.</p>
+
+    <div class="footer">
+        <p>Footer Text</p>
+    </div>
+
+    <h1>Horizontal Navigation Links</h1>
+    <p>By default, list items are displayed vertically. In this example we use display: inline-block to display them
+        horizontally (side by side).</p>
+    <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
+            width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
+            (for example if it has over 50 links inside of it).</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+    </div>
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+        <p>Hello World!</p>
+    </div>
+
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+    <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:40%">
+
+    <h2>Right align with the position property</h2>
+
+    <p>An example of how to right align elements with the position property:</p>
+
+    <div class="right">
+        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+            ever since.</p>
+    </div>
+
+    <h2>Without Clearfix</h2>
+
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+
+    <div>
+        <img class="img1" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+    <h2 style="clear:right">With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="clearfix">
+        <img class="img2" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+    <h2>Styling a link depending on state</h2>
+
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <h2>Pseudo-classes and HTML Classes</h2>
+
+    <p>When you hover over the first link below, it will change color and font size:</p>
+
+    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+    <p><a href="default.asp">CSS Tutorial</a></p>
+
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+
+    <div>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+    </div>
+
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+    <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+    <div>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more
+        text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more,
+        and more, and more.</div>
+
+    <p class="intro">This is an introduction.</p>
+    <p>This is a paragraph with some text. A bit more text even.</p>
+
+    <ul class="sidenav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="content">
+        <h2>Responsive Sidenav Example</h2>
+        <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px
+            or less.</p>
+        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center
+            the navigation links.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <h3>Resize the browser window to see the effect.</h3>
+
+        <h2>Hoverable Dropdown</h2>
+        <p>Move the mouse over the text below to open the dropdown content.</p>
+
+        <div class="dropdown">
+            <span>Mouse over me</span>
+            <div class="dropdown-content">
+                <p>Hello World!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

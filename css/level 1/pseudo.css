@@ -1,0 +1,57 @@
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+a.highlight:hover {
+    color: #ff0000;
+    font-size: 22px;
+}
+
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover p {
+    display: block;
+}
+
+p:first-child {
+    color: blue;
+}
+
+q:lang(no) {
+    quotes: "~" "~";
+}
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+div::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+p.intro::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
