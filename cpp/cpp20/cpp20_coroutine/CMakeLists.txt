@@ -1,0 +1,2 @@
+
+add_executable(cpp20_coroutine_generator cpp20_coroutine_generator.cpp)
