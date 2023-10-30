@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.20...3.26)
+cmake_minimum_required(VERSION 3.20...3.28)
 # CMake 3.20 is oldest version supporting C++23
 
-project(
-    "learn-cpp"
-    VERSION 0.1.0
-    LANGUAGES C CXX)
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
+  message(FATAL_ERROR "Please use out of source build:
+  cmake -Bbuild")
+endif()
+
+project("learn-cpp" LANGUAGES CXX)
 
 enable_testing()
 

@@ -11,6 +11,8 @@ check_cxx_symbol_exists(__cpp_lib_optional "optional" cpp17_optional)
 check_cxx_symbol_exists(__cpp_lib_any "any" cpp17_any)
 check_cxx_symbol_exists(__cpp_lib_string_view "string_view" cpp17_string_view)
 check_cxx_symbol_exists(__cpp_lib_variant "variant" cpp17_variant)
+check_cxx_symbol_exists(__cpp_lib_execution "execution" cpp17_execution)
+check_cxx_symbol_exists(__cpp_lib_memory_resource "memory_resource" cpp17_memory_resource)
 
 check_source_compiles(CXX
 "#if !__has_cpp_attribute(maybe_unused)
@@ -41,11 +43,13 @@ cpp17_init_if_switch
 set(names
   cpp17_any
   cpp17_deduction_guides
+  cpp17_execution
   cpp17_fallthrough
   cpp17_filesystem
   cpp17_folding
   cpp17_init_if_switch
   cpp17_maybe_unused
+  cpp17_memory_resource
   cpp17_optional
   cpp17_sample
   cpp17_string_view
